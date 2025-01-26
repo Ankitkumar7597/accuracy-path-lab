@@ -1,177 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accuracy Path Lab</title>
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- swiper carousel css -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.5.3.3.css" />
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/custom.css" />
-  </head>
-  <body>
-    <header>
-      <div class="marquee-text">
-        <ul class="d-flex align-items-center gap-2">
-          <li class="me-4">Popular Blood Test In Our lab:</li>
-          <li><a href="#">HbA1c (Glycosylated Hemoglobin),</a></li>
-          <li><a href="#">CBC (Complete Blodd Count),</a></li>
-          <li><a href="#">ESR (Erythrocyte Sedimentation Rate),</a></li>
-          <li><a href="#">FASTING (Glucose Fasting),</a></li>
-          <li><a href="#">SUGAR (Random blood Sugar),</a></li>
-          <li><a href="#">PPBS (Post Prandial Blood Sugar),</a></li>
-          <li><a href="#">LFT (Liver Function Test),</a></li>
-          <li><a href="#">RFT (Renal Function Test),</a></li>
-          <li><a href="#">LIPID (Lipid Profile),</a></li>
-          <li><a href="#">TSH (Thyroid Stimulating Hormone),</a></li>
-          <li><a href="#">VITAMIN D (25-Hydroxy Vitamin D),</a></li>
-          <li><a href="#">VITAMIN B12 (Cyanocobalamin),</a></li>
-          <li><a href="#">URINE (Urine Routine & Microscopy),</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accuracy Path Lab</title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- swiper carousel css -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.5.3.3.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+  <header>
+    <div class="marquee-text">
+      <ul class="d-flex align-items-center gap-2">
+        <li class="me-4">Popular Blood Test In Our lab:</li>
+        <li><a href="#">HbA1c (Glycosylated Hemoglobin),</a></li>
+        <li><a href="#">CBC (Complete Blodd Count),</a></li>
+        <li><a href="#">ESR (Erythrocyte Sedimentation Rate),</a></li>
+        <li><a href="#">FASTING (Glucose Fasting),</a></li>
+        <li><a href="#">SUGAR (Random blood Sugar),</a></li>
+        <li><a href="#">PPBS (Post Prandial Blood Sugar),</a></li>
+        <li><a href="#">LFT (Liver Function Test),</a></li>
+        <li><a href="#">RFT (Renal Function Test),</a></li>
+        <li><a href="#">LIPID (Lipid Profile),</a></li>
+        <li><a href="#">TSH (Thyroid Stimulating Hormone),</a></li>
+        <li><a href="#">VITAMIN D (25-Hydroxy Vitamin D),</a></li>
+        <li><a href="#">VITAMIN B12 (Cyanocobalamin),</a></li>
+        <li><a href="#">URINE (Urine Routine & Microscopy),</a></li>
+      </ul>
+    </div>
+    <div class="navbar-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <ul class="navbar-top-first">
+          <li class="d-none d-sm-block">Book Free Appointment</li>
+          <li>
+            <a href="#"><span class="cir-call"><i class="fa-solid fa-phone"></i></span><span>+91 9012345678</span></a>
+          </li>
+        </ul>
+        <ul class="navbar-top-second d-none d-lg-flex">
+          <li>
+            <select name="centerLocation" class="centerLocation" id="centerLocation">
+              <option value="Jaipur">Jaipur</option>
+              <option value="Rewari">Rewari</option>
+              <option value="Narnaul">Narnaul</option>
+              <option value="Neem ka Thana">Neem ka Thana</option>
+            </select>
+          </li>
+          <li>
+            <a href="#"><span class="sqr-icon"><i
+                  class="fa-regular fa-envelope"></i></span><span>Info@Patholab@Gmail.com</span></a>
+          </li>
+          <li class="d-none d-xl-flex">
+            <a href="#"><span class="sqr-icon"><i class="fa-regular fa-clock"></i></span><span>09:00AM -
+                08:00PM</span></a>
+          </li>
         </ul>
       </div>
-      <div class="navbar-top">
-        <div
-          class="container d-flex align-items-center justify-content-between"
-        >
-          <ul class="navbar-top-first">
-            <li class="d-none d-sm-block">Book Free Appointment</li>
-            <li>
-              <a href="#"
-                ><span class="cir-call"><i class="fa-solid fa-phone"></i></span
-                ><span>+91 9012345678</span></a
-              >
-            </li>
-          </ul>
-          <ul class="navbar-top-second d-none d-lg-flex">
-            <li>
-              <select
-                name="centerLocation"
-                class="centerLocation"
-                id="centerLocation"
-              >
-                <option value="Jaipur">Jaipur</option>
-                <option value="Rewari">Rewari</option>
-                <option value="Narnaul">Narnaul</option>
-                <option value="Neem ka Thana">Neem ka Thana</option>
-              </select>
-            </li>
-            <li>
-              <a href="#"
-                ><span class="sqr-icon"
-                  ><i class="fa-regular fa-envelope"></i></span
-                ><span>Info@Patholab@Gmail.com</span></a
-              >
-            </li>
-            <li class="d-none d-xl-flex">
-              <a href="#"
-                ><span class="sqr-icon"
-                  ><i class="fa-regular fa-clock"></i></span
-                ><span>09:00AM - 08:00PM</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <nav class="navbar navbar-expand-lg position-relative">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img
-              src="images/logo-light.svg"
-              alt="head-logo"
-              class="img-fluid"
-            />
-          </a>
+    </div>
+    <nav class="navbar navbar-expand-lg position-relative">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo-light.svg" alt="head-logo" class="img-fluid" />
+        </a>
 
-          <div
-            class="menu-btn navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div
-            class="collapse navbar-collapse d-none d-lg-flex"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Package
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Super 1</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Super 2</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Super Family</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Tests
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">CBC</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">ESR</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Hba1c</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Fasting Glucose</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Dangu</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Contact Us </a>
-              </li>
-            </ul>
-            <ul class="ps-0 mb-0 nav-bar-second">
-              <!-- <li class="position-relative d-none d-xl-flex">
+        <div class="menu-btn navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Package
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Super 1</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Super 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Super Family</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tests
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">CBC</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">ESR</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Hba1c</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Fasting Glucose</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Dangu</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Contact Us </a>
+            </li>
+          </ul>
+          <ul class="ps-0 mb-0 nav-bar-second">
+            <!-- <li class="position-relative d-none d-xl-flex">
                 <input
                   type="search"
                   class="seacrh-test"
@@ -180,97 +140,76 @@
                   ><i class="fa-solid fa-magnifying-glass"></i
                 ></a>
               </li> -->
-              <li><a href="#" class="btn btn-stroke" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Test</a></li>
-              <li>
-                <a href="#" class="btn btn-fill"
-                  >Nearest Lab</a
-                >
-              </li>
-            </ul>
+            <li><a href="#" class="btn btn-stroke" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Test</a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-fill">Nearest Lab</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <aside class="mobile-siderbar d-lg-none">
+    <div class="container overflow-y-scroll">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <div class="accordion" id="accordionExample">
+          <!-- Package Section -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingPackage">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePackage"
+                aria-expanded="true" aria-controls="collapsePackage">
+                Package
+              </button>
+            </h2>
+            <div id="collapsePackage" class="accordion-collapse collapse show" aria-labelledby="headingPackage"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item" href="#">Super 1</a></li>
+                  <li><a class="dropdown-item" href="#">Super 2</a></li>
+                  <li><a class="dropdown-item" href="#">Super Family</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tests Section -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTests">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTests" aria-expanded="false" aria-controls="collapseTests">
+                Tests
+              </button>
+            </h2>
+            <div id="collapseTests" class="accordion-collapse collapse" aria-labelledby="headingTests"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item" href="#">CBC</a></li>
+                  <li><a class="dropdown-item" href="#">ESR</a></li>
+                  <li><a class="dropdown-item" href="#">Hba1c</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Fasting Glucose</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Dengue</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <aside class="mobile-siderbar d-lg-none">
-      <div class="container overflow-y-scroll">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <div class="accordion" id="accordionExample">
-            <!-- Package Section -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingPackage">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapsePackage"
-                  aria-expanded="true"
-                  aria-controls="collapsePackage"
-                >
-                  Package
-                </button>
-              </h2>
-              <div
-                id="collapsePackage"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingPackage"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <ul class="list-unstyled">
-                    <li><a class="dropdown-item" href="#">Super 1</a></li>
-                    <li><a class="dropdown-item" href="#">Super 2</a></li>
-                    <li><a class="dropdown-item" href="#">Super Family</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tests Section -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTests">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTests"
-                  aria-expanded="false"
-                  aria-controls="collapseTests"
-                >
-                  Tests
-                </button>
-              </h2>
-              <div
-                id="collapseTests"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTests"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <ul class="list-unstyled">
-                    <li><a class="dropdown-item" href="#">CBC</a></li>
-                    <li><a class="dropdown-item" href="#">ESR</a></li>
-                    <li><a class="dropdown-item" href="#">Hba1c</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Fasting Glucose</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Dengue</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Contact Us </a>
-          </li>
-        </ul>
-        <ul class="ps-0 mb-0 mt-4">
-          <!-- <li class="position-relative">
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Contact Us </a>
+        </li>
+      </ul>
+      <ul class="ps-0 mb-0 mt-4">
+        <!-- <li class="position-relative">
             <input
               type="search"
               class="seacrh-test form-control"
@@ -279,768 +218,619 @@
               ><i class="fa-solid fa-magnifying-glass"></i
             ></a>
           </li> -->
-          <li class="my-3">
-            <a href="#" class="btn btn-stroke w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Test</a>
-          </li>
-          <li><a href="#" class="btn btn-fill w-100">Check Nearest Lab</a></li>
-        </ul>
+        <li class="my-3">
+          <a href="#" class="btn btn-stroke w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Test</a>
+        </li>
+        <li><a href="#" class="btn btn-fill w-100">Check Nearest Lab</a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+    <section class="section-hero pb-0 section-py-100">
+      <div class="container position-relative">
+        <div class="swiper hero-carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pb-150">
+                    <div>
+                      <span class="sub-heading animated-text">Trust our laboratory for fast and reliable
+                        results</span>
+                      <h1 class="h1-heading py-2 animated-text">
+                        Accurate Medical Testing for Better Health
+                      </h1>
+                      <div class="mb-3 hero-search-main position-relative animated-text">
+                        <input type="search" placeholder="Seach For Test or Packages"
+                          class="form-control hero-search" />
+                        <a href="#" class="btn btn-fill search-btn">Search</a>
+                      </div>
+                      <div class="d-flex align-items-center gap-3 animated-text flex-wrap flex-sm-nowrap">
+                        <a href="#" class="btn btn-stroke" data-bs-toggle="modal" data-bs-target="#bookingModal">Book A
+                          Online Test</a>
+                        <a href="#" class="btn btn-fill">Check Popular Packages</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div>
+                      <img src="images/hero-carousle-first.png" alt="hero-carousel"
+                        class="img-fluid hero-carousel-img d-none d-lg-block" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="row">
+                  <div class="col-xl-6 col-md-8 col-sm-12 col-12 pb-150">
+                    <div>
+                      <span class="sub-heading animated-text">Advanced Tech for Accurate Testing.</span>
+                      <h1 class="h1-heading py-2 animated-text">
+                        Advanced Diagnostic Solutions for Everyone
+                      </h1>
+                      <div class="mb-3 hero-search-main position-relative animated-text">
+                        <input type="search" placeholder="Seach For Test or Packages"
+                          class="form-control hero-search" />
+                        <a href="#" class="btn btn-fill search-btn">Search</a>
+                      </div>
+                      <div class="d-flex align-items-center gap-3 animated-text">
+                        <a href="#" class="btn btn-stroke">Cheack nearby Center</a>
+                        <a href="#" class="btn btn-fill">Find Test</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-8 col-sm-12 col-12">
+                    <div>
+                      <img src="images/hero-carusole-2.png" alt="hero-carousel"
+                        class="img-fluid hero-carousel-img d-none d-lg-block" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="row">
+                  <div class="col-xl-6 col-md-8 col-sm-12 col-12 pb-150">
+                    <div>
+                      <span class="sub-heading animated-text">Comprehensive lab services for doctors and
+                        patients.</span>
+                      <h1 class="h1-heading py-2 animated-text">
+                        Your Partner in Reliable Health Diagnostics
+                      </h1>
+                      <div class="mb-3 hero-search-main position-relative animated-text">
+                        <input type="search" placeholder="Seach For Test or Packages"
+                          class="form-control hero-search" />
+                        <a href="#" class="btn btn-fill search-btn">Search</a>
+                      </div>
+                      <div class="d-flex align-items-center gap-3 animated-text">
+                        <a href="#" class="btn btn-stroke">Contact Us</a>
+                        <a href="#" class="btn btn-fill">Our Lab Gallery</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-8 col-sm-12 col-12">
+                    <div>
+                      <img src="images/hero-carusole-1.png" alt="hero-carousel"
+                        class="img-fluid hero-carousel-img d-none d-lg-block" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-prev hero-prev"></div>
+        <div class="swiper-button-next hero-next"></div>
       </div>
-    </aside>
-    <main>
-      <section class="section-hero pb-0 section-py-100">
-        <div class="container position-relative">
-          <div class="swiper hero-carousel">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div>
-                  <div class="row">
-                    <div
-                      class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pb-150"
-                    >
-                      <div>
-                        <span class="sub-heading animated-text"
-                          >Trust our laboratory for fast and reliable
-                          results</span
-                        >
-                        <h1 class="h1-heading py-2 animated-text">
-                          Accurate Medical Testing for Better Health
-                        </h1>
-                        <div class="mb-3 hero-search-main position-relative animated-text">
-                          <input
-                            type="search"
-                            placeholder="Seach For Test or Packages"
-                            class="form-control hero-search"
-                          />
-                          <a href="#" class="btn btn-fill search-btn">Search</a>
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-3 animated-text flex-wrap flex-sm-nowrap"
-                        >
-                          <a href="#" class="btn btn-stroke" data-bs-toggle="modal" data-bs-target="#bookingModal"
-                            >Book A Online Test</a
-                          >
-                          <a href="#" class="btn btn-fill"
-                            >Check Popular Packages</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                      <div>
-                        <img
-                          src="images/hero-carousle-first.png"
-                          alt="hero-carousel"
-                          class="img-fluid hero-carousel-img d-none d-lg-block"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="row">
-                    <div class="col-xl-6 col-md-8 col-sm-12 col-12 pb-150">
-                      <div>
-                        <span class="sub-heading animated-text"
-                          >Advanced Tech for Accurate Testing.</span
-                        >
-                        <h1 class="h1-heading py-2 animated-text">
-                          Advanced Diagnostic Solutions for Everyone
-                        </h1>
-                        <div class="mb-3 hero-search-main position-relative animated-text">
-                          <input
-                            type="search"
-                            placeholder="Seach For Test or Packages"
-                            class="form-control hero-search"
-                          />
-                          <a href="#" class="btn btn-fill search-btn">Search</a>
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-3 animated-text"
-                        >
-                          <a href="#" class="btn btn-stroke"
-                            >Cheack nearby Center</a
-                          >
-                          <a href="#" class="btn btn-fill">Find Test</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-sm-12 col-12">
-                      <div>
-                        <img
-                          src="images/hero-carusole-2.png"
-                          alt="hero-carousel"
-                          class="img-fluid hero-carousel-img d-none d-lg-block"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="row">
-                    <div class="col-xl-6 col-md-8 col-sm-12 col-12 pb-150">
-                      <div>
-                        <span class="sub-heading animated-text"
-                          >Comprehensive lab services for doctors and
-                          patients.</span
-                        >
-                        <h1 class="h1-heading py-2 animated-text">
-                          Your Partner in Reliable Health Diagnostics
-                        </h1>
-                        <div class="mb-3 hero-search-main position-relative animated-text">
-                          <input
-                            type="search"
-                            placeholder="Seach For Test or Packages"
-                            class="form-control hero-search"
-                          />
-                          <a href="#" class="btn btn-fill search-btn">Search</a>
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-3 animated-text"
-                        >
-                          <a href="#" class="btn btn-stroke">Contact Us</a>
-                          <a href="#" class="btn btn-fill">Our Lab Gallery</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-sm-12 col-12">
-                      <div>
-                        <img
-                          src="images/hero-carusole-1.png"
-                          alt="hero-carousel"
-                          class="img-fluid hero-carousel-img d-none d-lg-block"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="swiper-button-prev hero-prev"></div>
-            <div class="swiper-button-next hero-next"></div>
-        </div>
-      </section>
+    </section>
 
-      <section class="section-py-50">
-        <div class="container">
-          <div>
-            <ul
-              class="ps-0 mb-0 d-flex align-items-center justify-content-center justify-content-md-start flex-wrap sec-2-cart-main"
-            >
-              <li>
-                <div class="sec-2-cart text-center">
-                  <img
-                    src="images/sec-2-1.png"
-                    alt="sec-2-1"
-                    class="img-fluid"
-                  />
-                  <h3 class="h3-heading mb-0">
-                    <span class="counter">780</span>K
-                  </h3>
-                  <p class="mb-0">Of Patients Served</p>
-                </div>
-              </li>
-              <li>
-                <div class="sec-2-cart text-center">
-                  <img
-                    src="images/sec-2-2.png"
-                    alt="sec-2-1"
-                    class="img-fluid"
-                  />
-                  <h3 class="h3-heading mb-0">
-                    <span class="counter">150</span>+
-                  </h3>
-                  <p class="mb-0">Of Expert Pathologists</p>
-                </div>
-              </li>
-              <li>
-                <div class="sec-2-cart text-center">
-                  <img
-                    src="images/sec-2-3.png"
-                    alt="sec-2-1"
-                    class="img-fluid"
-                  />
-                  <h3 class="h3-heading mb-0">
-                    <span class="counter">5</span>+
-                  </h3>
-                  <p class="mb-0">Of Premium Branch</p>
-                </div>
-              </li>
-              <li>
-                <div class="sec-2-cart text-center">
-                  <img
-                    src="images/sec-2-4.png"
-                    alt="sec-2-1"
-                    class="img-fluid"
-                  />
-                  <h3 class="h3-heading mb-0">
-                    <span class="counter">100</span>%
-                  </h3>
-                  <p class="mb-0">Of Client Satisfaction</p>
-                </div>
-              </li>
-              <li>
-                <div class="sec-2-cart text-center">
-                  <img
-                    src="images/sec-2-1.png"
-                    alt="sec-2-1"
-                    class="img-fluid"
-                  />
-                  <h3 class="h3-heading mb-0">
-                    <span class="counter">10</span>+
-                  </h3>
-                  <p class="mb-0">Years of Accurate Results</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-py-50">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-sm-10">
-              <p class="mb-0 sub-heading">Best Health Package</p>
-              <h2 class="h2-heading mb-0">Body Checkup Packages</h2>
-            </div>
-            <div class="col-4 col-sm-2">
-              <div class="text-end d-none d-sm-block">
-                <a href="#" class="btn btn-fill">All Packages</a>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5 row-gap-4">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-              <div class="package-card">
-                <div class="position-relative img-overle">
-                  <img
-                    src="images/Allergy.png"
-                    alt="package-1"
-                    class="img-fluid package-img w-100"
-                  />
-                  <span class="package-icon">
-                    <img
-                      src="images/Allergy-icon.png"
-                      alt="Allergy-icon"
-                      class="img-fluid"
-                    />
-                    <img
-                      src="images/dr-scope.png"
-                      alt="Allergy-icon-hover"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div>
-                    <a href="#" class="btn btn-fill">View Details</a>
-                  </div>
-                </div>
-
-                <div class="package-content">
-                  <h4 class="h4-heading">
-                    Know Your Allergies – Stay Safe and Healthy
-                  </h4>
-                  <p class="para-noraml line-clamp-3">
-                    Allergies can cause discomfort and affect your daily life.
-                    With our comprehensive Allergy Testing Package, identify
-                    triggers and take control of your health.
-                  </p>
-                  <ul class="mb-0 ps-3">
-                    <li>15 tests Test Includes</li>
-                    <li>20+ Parameters Includes</li>
-                  </ul>
-                  <div
-                    class="package-price d-flex align-items-center justify-content-between mt-3"
-                  >
-                    <p class="mb-0">₹ <span>2499</span></p>
-                    <a href="#" class="btn btn-stroke" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Package</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-              <div class="package-card">
-                <div class="position-relative img-overle">
-                  <img
-                    src="images/Cardiac.png"
-                    alt="package-1"
-                    class="img-fluid package-img w-100"
-                  />
-                  <span class="package-icon">
-                    <img
-                      src="images/cardiac-icon.png"
-                      alt="Allergy-icon"
-                      class="img-fluid"
-                    />
-                    <img
-                      src="images/dr-scope.png"
-                      alt="Allergy-icon-hover"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div>
-                    <a href="#" class="btn btn-fill">View Details</a>
-                  </div>
-                </div>
-
-                <div class="package-content">
-                  <h4 class="h4-heading">Keep Your Heart in Perfect Rhythm</h4>
-                  <p class="para-noraml line-clamp-3">
-                    Your heart deserves the best care. Our Cardiac Package is
-                    designed to assess your heart’s health and detect early
-                    signs of cardiac issues.
-                  </p>
-                  <ul class="mb-0 ps-3">
-                    <li>20 Tests Includes</li>
-                    <li>30+ Parameters Includes</li>
-                  </ul>
-                  <div
-                    class="package-price d-flex align-items-center justify-content-between mt-3"
-                  >
-                    <p class="mb-0">₹ <span>3999</span></p>
-                    <a href="#" class="btn btn-stroke" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Package</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-              <div class="package-card">
-                <div class="position-relative img-overle">
-                  <img
-                    src="images/lft.png"
-                    alt="package-1"
-                    class="img-fluid package-img w-100"
-                  />
-                  <span class="package-icon">
-                    <img
-                      src="images/liver.png"
-                      alt="Allergy-icon"
-                      class="img-fluid"
-                    />
-                    <img
-                      src="images/dr-scope.png"
-                      alt="Allergy-icon-hover"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div>
-                    <a href="#" class="btn btn-fill">View Details</a>
-                  </div>
-                </div>
-
-                <div class="package-content">
-                  <h4 class="h4-heading">
-                    Monitor Your Liver for a Healthier Tomorrow
-                  </h4>
-                  <p class="para-noraml line-clamp-3">
-                    A healthy liver is key to your overall well-being. Our Liver
-                    Function Package provides a detailed analysis of your liver
-                    health to ensure it functions optimally.
-                  </p>
-                  <ul class="mb-0 ps-3">
-                    <li>12 Test Includes</li>
-                    <li>15 Parameters Includes</li>
-                  </ul>
-                  <div
-                    class="package-price d-flex align-items-center justify-content-between mt-3"
-                  >
-                    <p class="mb-0">₹ <span>1999</span></p>
-                    <a href="#" class="btn btn-stroke" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Package</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="text-center d-sm-none mt-4">
-            <a href="#" class="btn btn-fill">See All Packages</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-py-50">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-sm-10">
-              <p class="mb-0 sub-heading">
-                Simple Habits for a Healthier Lifestyle
-              </p>
-              <h2 class="h2-heading mb-0">Health & Wellness Tips</h2>
-            </div>
-            <div class="col-4 col-sm-2">
-              <div class="text-end d-none d-sm-block">
-                <a href="#" class="btn btn-fill">All Blogs</a>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5 row-gap-4">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-              <div class="blog-card">
-                <div class="position-relative overflow-hidden">
-                  <img
-                    src="images/blog-1.png"
-                    alt="allergy-blog"
-                    class="img-fluid package-img w-100"
-                  />
-                  <div class="blog-date">
-                    <p class="mb-0">January 20, 2025</p>
-                  </div>
-                </div>
-
-                <div class="blog-content pt-3">
-                  <h5 class="h5-heading">
-                    Understanding Seasonal Allergies and How to Stay Protected
-                  </h5>
-                  <p class="para-noraml line-clamp-3 mb-2">
-                    Seasonal allergies can disrupt your daily life, causing
-                    sneezing, congestion, and fatigue. Learn how to identify
-                    triggers and manage symptoms effectively.
-                  </p>
-                  <div>
-                    <a href="#" class="text-btn">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-              <div class="blog-card">
-                <div class="position-relative overflow-hidden">
-                  <img
-                    src="images/blog-2.png"
-                    alt="research-blog"
-                    class="img-fluid package-img w-100"
-                  />
-                  <div class="blog-date">
-                    <p class="mb-0">January 22, 2025</p>
-                  </div>
-                </div>
-
-                <div class="blog-content pt-3">
-                  <h5 class="h5-heading">
-                    The Latest Advancements in Medical Research: 2025 Highlights
-                  </h5>
-                  <p class="para-noraml line-clamp-3 mb-2">
-                    Discover groundbreaking developments in medical research,
-                    from innovative treatments to cutting-edge technologies
-                    shaping healthcare's future.
-                  </p>
-                  <div>
-                    <a href="#" class="text-btn">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-              <div class="blog-card">
-                <div class="position-relative overflow-hidden">
-                  <img
-                    src="images/blog-3.png"
-                    alt="hmpv-virus-blog"
-                    class="img-fluid package-img w-100"
-                  />
-                  <div class="blog-date">
-                    <p class="mb-0">January 25, 2025</p>
-                  </div>
-                </div>
-
-                <div class="blog-content pt-3">
-                  <h5 class="h5-heading">
-                    The Hidden Danger of HMPV Virus: Symptoms and Prevention
-                  </h5>
-                  <p class="para-noraml line-clamp-3 mb-2">
-                    HMPV virus is becoming a growing concern worldwide. Learn
-                    about its symptoms, how it spreads, and what steps you can
-                    take to protect your loved ones.
-                  </p>
-                  <div>
-                    <a href="#" class="text-btn">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="text-center d-sm-none mt-4">
-            <a href="#" class="btn btn-fill">See All Blog</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-py-50">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-sm-10">
-              <p class="mb-0 sub-heading">Best Health Test</p>
-              <h2 class="h2-heading mb-0">All Medical Test</h2>
-            </div>
-            <div class="col-4 col-sm-2">
-              <div class="text-end d-none d-sm-block">
-                <a href="#" class="btn btn-fill">All Tests</a>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5 row-gap-4">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="test-card">
-                <div class="test-card-icon">
-                  <img
-                    src="images/thyroid.png"
-                    alt="Thyroid Test"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="test-content pt-3">
-                  <h4 class="h4-heading">Thyroid Profile Test</h4>
-                  <p class="fs-5 fw-semibold">3 Parameters Covered</p>
-                  <ul class="mb-0 ps-3">
-                    <li>Morning test preferred.</li>
-                    <li>Home Collection Available</li>
-                    <li>Lab Visit Optional</li>
-                  </ul>
-                  <div
-                    class="package-price d-flex align-items-center justify-content-between mt-3"
-                  >
-                    <p class="mb-0">₹ <span>399</span></p>
-                    <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="test-card">
-                <div class="test-card-icon">
-                  <img src="images/cbc.png" alt="CBC Test" class="img-fluid" />
-                </div>
-                <div class="test-content pt-3">
-                  <h4 class="h4-heading">CBC</h4>
-                  <p class="fs-5 fw-semibold">22 Parameters Covered</p>
-                  <ul class="mb-0 ps-3">
-                    <li>Fast results in 24 hours.</li>
-                    <li>Home Collection Available</li>
-                    <li>Lab Visit Optional</li>
-                  </ul>
-                  <div
-                    class="package-price d-flex align-items-center justify-content-between mt-3"
-                  >
-                    <p class="mb-0">₹ <span>499</span></p>
-                    <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="test-card">
-                <div class="test-card-icon">
-                  <img src="images/esr.png" alt="ESR Test" class="img-fluid" />
-                </div>
-                <div class="test-content pt-3">
-                  <h4 class="h4-heading">ESR</h4>
-                  <p class="fs-5 fw-semibold">1 Parameter Covered</p>
-                  <ul class="mb-0 ps-3">
-                    <li>No special preparation needed.</li>
-                    <li>Home Collection Available</li>
-                    <li>Lab Visit Optional</li>
-                  </ul>
-                  <div
-                    class="package-price d-flex align-items-center justify-content-between mt-3"
-                  >
-                    <p class="mb-0">₹ <span>299</span></p>
-                    <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="test-card">
-                <div class="test-card-icon">
-                  <img
-                    src="images/hba1c.png"
-                    alt="HbA1c Test"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="test-content pt-3">
-                  <h4 class="h4-heading">HbA1c</h4>
-                  <p class="fs-5 fw-semibold">1 Parameter Covered</p>
-                  <ul class="mb-0 ps-3">
-                    <li>Fast and accurate results.</li>
-                    <li>Home Collection Available</li>
-                    <li>Lab Visit Optional</li>
-                  </ul>
-                  <div
-                    class="package-price d-flex align-items-center justify-content-between mt-3"
-                  >
-                    <p class="mb-0">₹ <span>599</span></p>
-                    <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="test-card">
-                <div class="test-card-icon">
-                  <img
-                    src="images/glucose.png"
-                    alt="Glucose Test"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="test-content pt-3">
-                  <h4 class="h4-heading">Blood Glucose Test</h4>
-                  <p class="fs-5 fw-semibold">1 Parameter Covered</p>
-                  <ul class="mb-0 ps-3">
-                    <li>Fasting required.</li>
-                    <li>Home Collection Available</li>
-                    <li>Lab Visit Optional</li>
-                  </ul>
-                  <div
-                    class="package-price d-flex align-items-center justify-content-between mt-3"
-                  >
-                    <p class="mb-0">₹ <span>199</span></p>
-                    <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="test-card">
-                <div class="test-card-icon">
-                  <img
-                    src="images/fasting-suger.png"
-                    alt="Fasting Sugar Test"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="test-content pt-3">
-                  <h4 class="h4-heading">Fasting Sugar Test</h4>
-                  <p class="fs-5 fw-semibold">1 Parameter Covered</p>
-                  <ul class="mb-0 ps-3">
-                    <li>collected in the morning. req.</li>
-                    <li>Home Collection Available</li>
-                    <li>Lab Visit Optional</li>
-                  </ul>
-                  <div
-                    class="package-price d-flex align-items-center justify-content-between mt-3"
-                  >
-                    <p class="mb-0">₹ <span>249</span></p>
-                    <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="test-card">
-                <div class="test-card-icon">
-                  <img
-                    src="images/ppbs.png"
-                    alt="PPBS Test"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="test-content pt-3">
-                  <h4 class="h4-heading">PPBS</h4>
-                  <p class="fs-5 fw-semibold">1 Parameter Covered</p>
-                  <ul class="mb-0 ps-3">
-                    <li>Sample after 2 hours of meal.</li>
-                    <li>Home Collection Available</li>
-                    <li>Lab Visit Optional</li>
-                  </ul>
-                  <div
-                    class="package-price d-flex align-items-center justify-content-between mt-3"
-                  >
-                    <p class="mb-0">₹ <span>299</span></p>
-                    <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="test-card">
-                <div class="test-card-icon">
-                  <img
-                    src="images/lft-test.png"
-                    alt="LFT Test"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="test-content pt-3">
-                  <h4 class="h4-heading">LFT</h4>
-                  <p class="fs-5 fw-semibold">11 Parameters Covered</p>
-                  <ul class="mb-0 ps-3">
-                    <li>best collected in the morning.</li>
-                    <li>Home Collection Available</li>
-                    <li>Lab Visit Optional</li>
-                  </ul>
-                  <div
-                    class="package-price d-flex align-items-center justify-content-between mt-3"
-                  >
-                    <p class="mb-0">₹ <span>699</span></p>
-                    <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="text-center d-sm-none mt-4">
-            <a href="#" class="btn btn-fill">See All Tests</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-py-50 cerifi-sec">
-        <div class="container position-relative z-3">
-          <div class="text-center col-12 col-md-10 mx-auto">
-            <p class="mb-0 sub-heading text-white">
-              Patholab Laboratory is a Full-Service Clinical Lab
-            </p>
-            <h2 class="h1-heading mb-0 text-white">
-              Patholab Provides the best laboratory experience
-            </h2>
-          </div>
-          <ul class="certification-logo">
+    <section class="section-py-50">
+      <div class="container">
+        <div>
+          <ul
+            class="ps-0 mb-0 d-flex align-items-center justify-content-center justify-content-md-start flex-wrap sec-2-cart-main">
             <li>
-              <a href="#">
-                <img src="images/nabl.png" alt="nabl logo" class="img-fluid" />
-              </a>
+              <div class="sec-2-cart text-center">
+                <img src="images/sec-2-1.png" alt="sec-2-1" class="img-fluid" />
+                <h3 class="h3-heading mb-0">
+                  <span class="counter">780</span>K
+                </h3>
+                <p class="mb-0">Of Patients Served</p>
+              </div>
             </li>
             <li>
-              <a href="#">
-                <img src="images/iso.jpeg" alt="iso logo" class="img-fluid" />
-              </a>
+              <div class="sec-2-cart text-center">
+                <img src="images/sec-2-2.png" alt="sec-2-1" class="img-fluid" />
+                <h3 class="h3-heading mb-0">
+                  <span class="counter">150</span>+
+                </h3>
+                <p class="mb-0">Of Expert Pathologists</p>
+              </div>
             </li>
             <li>
-              <a href="#">
-                <img src="images/ICMR.png" alt="icmr logo" class="img-fluid" />
-              </a>
+              <div class="sec-2-cart text-center">
+                <img src="images/sec-2-3.png" alt="sec-2-1" class="img-fluid" />
+                <h3 class="h3-heading mb-0">
+                  <span class="counter">5</span>+
+                </h3>
+                <p class="mb-0">Of Premium Branch</p>
+              </div>
+            </li>
+            <li>
+              <div class="sec-2-cart text-center">
+                <img src="images/sec-2-4.png" alt="sec-2-1" class="img-fluid" />
+                <h3 class="h3-heading mb-0">
+                  <span class="counter">100</span>%
+                </h3>
+                <p class="mb-0">Of Client Satisfaction</p>
+              </div>
+            </li>
+            <li>
+              <div class="sec-2-cart text-center">
+                <img src="images/sec-2-1.png" alt="sec-2-1" class="img-fluid" />
+                <h3 class="h3-heading mb-0">
+                  <span class="counter">10</span>+
+                </h3>
+                <p class="mb-0">Years of Accurate Results</p>
+              </div>
             </li>
           </ul>
-          <div class="text-center">
-            <a href="#" class="btn btn-fill">About Our Laboratory</a>
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section-py-50">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-sm-10">
-              <p class="mb-0 sub-heading">Our Patients</p>
-              <h2 class="h2-heading mb-0">Patients Testmonial</h2>
+    <section class="section-py-50">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-10">
+            <p class="mb-0 sub-heading">Best Health Package</p>
+            <h2 class="h2-heading mb-0">Body Checkup Packages</h2>
+          </div>
+          <div class="col-4 col-sm-2">
+            <div class="text-end d-none d-sm-block">
+              <a href="#" class="btn btn-fill">All Packages</a>
             </div>
           </div>
-<div class="position-relative">
+        </div>
+        <div class="row mt-5 row-gap-4">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="package-card">
+              <div class="position-relative img-overle">
+                <img src="images/Allergy.png" alt="package-1" class="img-fluid package-img w-100" />
+                <span class="package-icon">
+                  <img src="images/Allergy-icon.png" alt="Allergy-icon" class="img-fluid" />
+                  <img src="images/dr-scope.png" alt="Allergy-icon-hover" class="img-fluid" />
+                </span>
+                <div>
+                  <a href="#" class="btn btn-fill">View Details</a>
+                </div>
+              </div>
+
+              <div class="package-content">
+                <h4 class="h4-heading">
+                  Know Your Allergies – Stay Safe and Healthy
+                </h4>
+                <p class="para-noraml line-clamp-3">
+                  Allergies can cause discomfort and affect your daily life.
+                  With our comprehensive Allergy Testing Package, identify
+                  triggers and take control of your health.
+                </p>
+                <ul class="mb-0 ps-3">
+                  <li>15 tests Test Includes</li>
+                  <li>20+ Parameters Includes</li>
+                </ul>
+                <div class="package-price d-flex align-items-center justify-content-between mt-3">
+                  <p class="mb-0">₹ <span>2499</span></p>
+                  <a href="#" class="btn btn-stroke" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a
+                    Package</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="package-card">
+              <div class="position-relative img-overle">
+                <img src="images/Cardiac.png" alt="package-1" class="img-fluid package-img w-100" />
+                <span class="package-icon">
+                  <img src="images/cardiac-icon.png" alt="Allergy-icon" class="img-fluid" />
+                  <img src="images/dr-scope.png" alt="Allergy-icon-hover" class="img-fluid" />
+                </span>
+                <div>
+                  <a href="#" class="btn btn-fill">View Details</a>
+                </div>
+              </div>
+
+              <div class="package-content">
+                <h4 class="h4-heading">Keep Your Heart in Perfect Rhythm</h4>
+                <p class="para-noraml line-clamp-3">
+                  Your heart deserves the best care. Our Cardiac Package is
+                  designed to assess your heart’s health and detect early
+                  signs of cardiac issues.
+                </p>
+                <ul class="mb-0 ps-3">
+                  <li>20 Tests Includes</li>
+                  <li>30+ Parameters Includes</li>
+                </ul>
+                <div class="package-price d-flex align-items-center justify-content-between mt-3">
+                  <p class="mb-0">₹ <span>3999</span></p>
+                  <a href="#" class="btn btn-stroke" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a
+                    Package</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="package-card">
+              <div class="position-relative img-overle">
+                <img src="images/lft.png" alt="package-1" class="img-fluid package-img w-100" />
+                <span class="package-icon">
+                  <img src="images/liver.png" alt="Allergy-icon" class="img-fluid" />
+                  <img src="images/dr-scope.png" alt="Allergy-icon-hover" class="img-fluid" />
+                </span>
+                <div>
+                  <a href="#" class="btn btn-fill">View Details</a>
+                </div>
+              </div>
+
+              <div class="package-content">
+                <h4 class="h4-heading">
+                  Monitor Your Liver for a Healthier Tomorrow
+                </h4>
+                <p class="para-noraml line-clamp-3">
+                  A healthy liver is key to your overall well-being. Our Liver
+                  Function Package provides a detailed analysis of your liver
+                  health to ensure it functions optimally.
+                </p>
+                <ul class="mb-0 ps-3">
+                  <li>12 Test Includes</li>
+                  <li>15 Parameters Includes</li>
+                </ul>
+                <div class="package-price d-flex align-items-center justify-content-between mt-3">
+                  <p class="mb-0">₹ <span>1999</span></p>
+                  <a href="#" class="btn btn-stroke" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a
+                    Package</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center d-sm-none mt-4">
+          <a href="#" class="btn btn-fill">See All Packages</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-py-50">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-10">
+            <p class="mb-0 sub-heading">
+              Simple Habits for a Healthier Lifestyle
+            </p>
+            <h2 class="h2-heading mb-0">Health & Wellness Tips</h2>
+          </div>
+          <div class="col-4 col-sm-2">
+            <div class="text-end d-none d-sm-block">
+              <a href="#" class="btn btn-fill">All Blogs</a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 row-gap-4">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="blog-card">
+              <div class="position-relative overflow-hidden">
+                <img src="images/blog-1.png" alt="allergy-blog" class="img-fluid package-img w-100" />
+                <div class="blog-date">
+                  <p class="mb-0">January 20, 2025</p>
+                </div>
+              </div>
+
+              <div class="blog-content pt-3">
+                <h5 class="h5-heading">
+                  Understanding Seasonal Allergies and How to Stay Protected
+                </h5>
+                <p class="para-noraml line-clamp-3 mb-2">
+                  Seasonal allergies can disrupt your daily life, causing
+                  sneezing, congestion, and fatigue. Learn how to identify
+                  triggers and manage symptoms effectively.
+                </p>
+                <div>
+                  <a href="#" class="text-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="blog-card">
+              <div class="position-relative overflow-hidden">
+                <img src="images/blog-2.png" alt="research-blog" class="img-fluid package-img w-100" />
+                <div class="blog-date">
+                  <p class="mb-0">January 22, 2025</p>
+                </div>
+              </div>
+
+              <div class="blog-content pt-3">
+                <h5 class="h5-heading">
+                  The Latest Advancements in Medical Research: 2025 Highlights
+                </h5>
+                <p class="para-noraml line-clamp-3 mb-2">
+                  Discover groundbreaking developments in medical research,
+                  from innovative treatments to cutting-edge technologies
+                  shaping healthcare's future.
+                </p>
+                <div>
+                  <a href="#" class="text-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="blog-card">
+              <div class="position-relative overflow-hidden">
+                <img src="images/blog-3.png" alt="hmpv-virus-blog" class="img-fluid package-img w-100" />
+                <div class="blog-date">
+                  <p class="mb-0">January 25, 2025</p>
+                </div>
+              </div>
+
+              <div class="blog-content pt-3">
+                <h5 class="h5-heading">
+                  The Hidden Danger of HMPV Virus: Symptoms and Prevention
+                </h5>
+                <p class="para-noraml line-clamp-3 mb-2">
+                  HMPV virus is becoming a growing concern worldwide. Learn
+                  about its symptoms, how it spreads, and what steps you can
+                  take to protect your loved ones.
+                </p>
+                <div>
+                  <a href="#" class="text-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center d-sm-none mt-4">
+          <a href="#" class="btn btn-fill">See All Blog</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-py-50">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-10">
+            <p class="mb-0 sub-heading">Best Health Test</p>
+            <h2 class="h2-heading mb-0">All Medical Test</h2>
+          </div>
+          <div class="col-4 col-sm-2">
+            <div class="text-end d-none d-sm-block">
+              <a href="#" class="btn btn-fill">All Tests</a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 row-gap-4">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="test-card">
+              <div class="test-card-icon">
+                <img src="images/thyroid.png" alt="Thyroid Test" class="img-fluid" />
+              </div>
+              <div class="test-content pt-3">
+                <h4 class="h4-heading">Thyroid Profile Test</h4>
+                <p class="fs-5 fw-semibold">3 Parameters Covered</p>
+                <ul class="mb-0 ps-3">
+                  <li>Morning test preferred.</li>
+                  <li>Home Collection Available</li>
+                  <li>Lab Visit Optional</li>
+                </ul>
+                <div class="package-price d-flex align-items-center justify-content-between mt-3">
+                  <p class="mb-0">₹ <span>399</span></p>
+                  <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="test-card">
+              <div class="test-card-icon">
+                <img src="images/cbc.png" alt="CBC Test" class="img-fluid" />
+              </div>
+              <div class="test-content pt-3">
+                <h4 class="h4-heading">CBC</h4>
+                <p class="fs-5 fw-semibold">22 Parameters Covered</p>
+                <ul class="mb-0 ps-3">
+                  <li>Fast results in 24 hours.</li>
+                  <li>Home Collection Available</li>
+                  <li>Lab Visit Optional</li>
+                </ul>
+                <div class="package-price d-flex align-items-center justify-content-between mt-3">
+                  <p class="mb-0">₹ <span>499</span></p>
+                  <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="test-card">
+              <div class="test-card-icon">
+                <img src="images/esr.png" alt="ESR Test" class="img-fluid" />
+              </div>
+              <div class="test-content pt-3">
+                <h4 class="h4-heading">ESR</h4>
+                <p class="fs-5 fw-semibold">1 Parameter Covered</p>
+                <ul class="mb-0 ps-3">
+                  <li>No special preparation needed.</li>
+                  <li>Home Collection Available</li>
+                  <li>Lab Visit Optional</li>
+                </ul>
+                <div class="package-price d-flex align-items-center justify-content-between mt-3">
+                  <p class="mb-0">₹ <span>299</span></p>
+                  <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="test-card">
+              <div class="test-card-icon">
+                <img src="images/hba1c.png" alt="HbA1c Test" class="img-fluid" />
+              </div>
+              <div class="test-content pt-3">
+                <h4 class="h4-heading">HbA1c</h4>
+                <p class="fs-5 fw-semibold">1 Parameter Covered</p>
+                <ul class="mb-0 ps-3">
+                  <li>Fast and accurate results.</li>
+                  <li>Home Collection Available</li>
+                  <li>Lab Visit Optional</li>
+                </ul>
+                <div class="package-price d-flex align-items-center justify-content-between mt-3">
+                  <p class="mb-0">₹ <span>599</span></p>
+                  <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="test-card">
+              <div class="test-card-icon">
+                <img src="images/glucose.png" alt="Glucose Test" class="img-fluid" />
+              </div>
+              <div class="test-content pt-3">
+                <h4 class="h4-heading">Blood Glucose Test</h4>
+                <p class="fs-5 fw-semibold">1 Parameter Covered</p>
+                <ul class="mb-0 ps-3">
+                  <li>Fasting required.</li>
+                  <li>Home Collection Available</li>
+                  <li>Lab Visit Optional</li>
+                </ul>
+                <div class="package-price d-flex align-items-center justify-content-between mt-3">
+                  <p class="mb-0">₹ <span>199</span></p>
+                  <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="test-card">
+              <div class="test-card-icon">
+                <img src="images/fasting-suger.png" alt="Fasting Sugar Test" class="img-fluid" />
+              </div>
+              <div class="test-content pt-3">
+                <h4 class="h4-heading">Fasting Sugar Test</h4>
+                <p class="fs-5 fw-semibold">1 Parameter Covered</p>
+                <ul class="mb-0 ps-3">
+                  <li>collected in the morning. req.</li>
+                  <li>Home Collection Available</li>
+                  <li>Lab Visit Optional</li>
+                </ul>
+                <div class="package-price d-flex align-items-center justify-content-between mt-3">
+                  <p class="mb-0">₹ <span>249</span></p>
+                  <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="test-card">
+              <div class="test-card-icon">
+                <img src="images/ppbs.png" alt="PPBS Test" class="img-fluid" />
+              </div>
+              <div class="test-content pt-3">
+                <h4 class="h4-heading">PPBS</h4>
+                <p class="fs-5 fw-semibold">1 Parameter Covered</p>
+                <ul class="mb-0 ps-3">
+                  <li>Sample after 2 hours of meal.</li>
+                  <li>Home Collection Available</li>
+                  <li>Lab Visit Optional</li>
+                </ul>
+                <div class="package-price d-flex align-items-center justify-content-between mt-3">
+                  <p class="mb-0">₹ <span>299</span></p>
+                  <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="test-card">
+              <div class="test-card-icon">
+                <img src="images/lft-test.png" alt="LFT Test" class="img-fluid" />
+              </div>
+              <div class="test-content pt-3">
+                <h4 class="h4-heading">LFT</h4>
+                <p class="fs-5 fw-semibold">11 Parameters Covered</p>
+                <ul class="mb-0 ps-3">
+                  <li>best collected in the morning.</li>
+                  <li>Home Collection Available</li>
+                  <li>Lab Visit Optional</li>
+                </ul>
+                <div class="package-price d-flex align-items-center justify-content-between mt-3">
+                  <p class="mb-0">₹ <span>699</span></p>
+                  <a href="#" class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Test</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center d-sm-none mt-4">
+          <a href="#" class="btn btn-fill">See All Tests</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-py-50 cerifi-sec">
+      <div class="container position-relative z-3">
+        <div class="text-center col-12 col-md-10 mx-auto">
+          <p class="mb-0 sub-heading text-white">
+            Patholab Laboratory is a Full-Service Clinical Lab
+          </p>
+          <h2 class="h1-heading mb-0 text-white">
+            Patholab Provides the best laboratory experience
+          </h2>
+        </div>
+        <ul class="certification-logo">
+          <li>
+            <a href="#">
+              <img src="images/nabl.png" alt="nabl logo" class="img-fluid" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/iso.jpeg" alt="iso logo" class="img-fluid" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/ICMR.png" alt="icmr logo" class="img-fluid" />
+            </a>
+          </li>
+        </ul>
+        <div class="text-center">
+          <a href="#" class="btn btn-fill">About Our Laboratory</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-py-50">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-10">
+            <p class="mb-0 sub-heading">Our Patients</p>
+            <h2 class="h2-heading mb-0">Patients Testmonial</h2>
+          </div>
+        </div>
+        <div class="position-relative">
           <div class="swiper testmonial-carousel">
             <div class="swiper-wrapper py-3 pb-4">
               <div class="swiper-slide">
@@ -1048,11 +838,7 @@
                   <div class="position-relative z-3">
                     <div class="d-flex align-items-center gap-3 mb-3">
                       <div>
-                        <img
-                          src="images/testmonial-1.png"
-                          alt="testmonial 1"
-                          class="img-fluid"
-                        />
+                        <img src="images/testmonial-1.png" alt="testmonial 1" class="img-fluid" />
                       </div>
                       <div>
                         <h5 class="h5-heading mb-0 fw-bold">Ankit</h5>
@@ -1060,79 +846,51 @@
                       </div>
                     </div>
                     <p class="testmonial-text line-clamp-5">
-                      I visited Patholab for a health checkup, and I must say their service was outstanding. The staff is professional and polite, and the reports were delivered on time. I’m very impressed with the accuracy of their results and highly recommend their services.
+                      I visited Patholab for a health checkup, and I must say their service was outstanding. The staff
+                      is professional and polite, and the reports were delivered on time. I’m very impressed with the
+                      accuracy of their results and highly recommend their services.
                     </p>
                     <div class="d-flex align-items-center gap-3">
                       <span class="fs-5 fw-semibold">Rating</span>
                       <ul class="ps-0 mb-0 d-flex align-items-center gap-1">
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                       </ul>
@@ -1145,11 +903,7 @@
                   <div class="position-relative z-3">
                     <div class="d-flex align-items-center gap-3 mb-3">
                       <div>
-                        <img
-                          src="images/testmonial-1.png"
-                          alt="testmonial 1"
-                          class="img-fluid"
-                        />
+                        <img src="images/testmonial-1.png" alt="testmonial 1" class="img-fluid" />
                       </div>
                       <div>
                         <h5 class="h5-heading mb-0 fw-bold">Shubham Singh</h5>
@@ -1157,79 +911,51 @@
                       </div>
                     </div>
                     <p class="testmonial-text line-clamp-5">
-                      Patholab offers top-notch diagnostic services with a customer-friendly approach. The lab is clean, well-maintained, and equipped with modern technology. Their timely reporting and reliable results make them the best in the city.
+                      Patholab offers top-notch diagnostic services with a customer-friendly approach. The lab is clean,
+                      well-maintained, and equipped with modern technology. Their timely reporting and reliable results
+                      make them the best in the city.
                     </p>
                     <div class="d-flex align-items-center gap-3">
                       <span class="fs-5 fw-semibold">Rating</span>
                       <ul class="ps-0 mb-0 d-flex align-items-center gap-1">
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                       </ul>
@@ -1242,11 +968,7 @@
                   <div class="position-relative z-3">
                     <div class="d-flex align-items-center gap-3 mb-3">
                       <div>
-                        <img
-                          src="images/testmonial-1.png"
-                          alt="testmonial 1"
-                          class="img-fluid"
-                        />
+                        <img src="images/testmonial-1.png" alt="testmonial 1" class="img-fluid" />
                       </div>
                       <div>
                         <h5 class="h5-heading mb-0 fw-bold">Ankit</h5>
@@ -1254,79 +976,51 @@
                       </div>
                     </div>
                     <p class="testmonial-text line-clamp-5">
-                      My experience with Patholab has been excellent. The team is highly skilled, and their attention to detail is remarkable. The entire process, from sample collection to report delivery, was smooth and efficient. I trust them completely for any diagnostic needs.
+                      My experience with Patholab has been excellent. The team is highly skilled, and their attention to
+                      detail is remarkable. The entire process, from sample collection to report delivery, was smooth
+                      and efficient. I trust them completely for any diagnostic needs.
                     </p>
                     <div class="d-flex align-items-center gap-3">
                       <span class="fs-5 fw-semibold">Rating</span>
                       <ul class="ps-0 mb-0 d-flex align-items-center gap-1">
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                       </ul>
@@ -1339,11 +1033,7 @@
                   <div class="position-relative z-3">
                     <div class="d-flex align-items-center gap-3 mb-3">
                       <div>
-                        <img
-                          src="images/testmonial-1.png"
-                          alt="testmonial 1"
-                          class="img-fluid"
-                        />
+                        <img src="images/testmonial-1.png" alt="testmonial 1" class="img-fluid" />
                       </div>
                       <div>
                         <h5 class="h5-heading mb-0 fw-bold">Rocky Sharma</h5>
@@ -1351,79 +1041,51 @@
                       </div>
                     </div>
                     <p class="testmonial-text line-clamp-5">
-                      Patholab has set a benchmark for diagnostic services in the city. The process was hassle-free, and the staff ensured I was comfortable throughout. The accurate and detailed reports gave me peace of mind. Highly recommended!
+                      Patholab has set a benchmark for diagnostic services in the city. The process was hassle-free, and
+                      the staff ensured I was comfortable throughout. The accurate and detailed reports gave me peace of
+                      mind. Highly recommended!
                     </p>
                     <div class="d-flex align-items-center gap-3">
                       <span class="fs-5 fw-semibold">Rating</span>
                       <ul class="ps-0 mb-0 d-flex align-items-center gap-1">
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                         <li>
-                          <svg
-                            width="18"
-                            height="17"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M8.42937 0.75623C8.60898 0.203444 9.39102 0.203444 9.57063 0.75623L11.1104 5.49524C11.1908 5.74245 11.4211 5.90983 11.6811 5.90983H16.664C17.2452 5.90983 17.4869 6.6536 17.0166 6.99524L12.9854 9.92411C12.7751 10.0769 12.6871 10.3477 12.7674 10.5949L14.3072 15.3339C14.4868 15.8867 13.8541 16.3464 13.3839 16.0048L9.35267 13.0759C9.14238 12.9231 8.85762 12.9231 8.64733 13.0759L4.61609 16.0048C4.14586 16.3464 3.51317 15.8867 3.69278 15.3339L5.23258 10.5949C5.3129 10.3477 5.22491 10.0769 5.01462 9.92411L0.983374 6.99524C0.513146 6.6536 0.754811 5.90983 1.33605 5.90983H6.31893C6.57887 5.90983 6.80924 5.74245 6.88957 5.49524L8.42937 0.75623Z"
-                              fill="#FFB422"
-                            />
+                              fill="#FFB422" />
                           </svg>
                         </li>
                       </ul>
@@ -1435,370 +1097,260 @@
             <div class="swiper-pagination"></div>
           </div>
           <div class="swiper-button-prev testmonial-prev"></div>
-            <div class="swiper-button-next testmonial-next"></div>
+          <div class="swiper-button-next testmonial-next"></div>
         </div>
       </div>
-      </section>
+    </section>
 
-      <section class="section-py-50 about-sec pb-lg-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-12">
-              <div class="text-center">
-                <p class="mb-0 sub-heading">
-                  Patholab Laboratory is a Full-Service Clinical Lab
-                </p>
-                <h2 class="h2-heading mb-0 secondary-textcolor">
-                  Patholab Provides the best laboratory experience
-                </h2>
-              </div>
-              <div
-                class="d-flex align-items-center justify-content-center gap-4 mt-4"
-              >
-                <a href="#" class="btn btn-fill"
-                  ><svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.09827 23.5036L2.70929 17.6222C1.71541 15.9011 1.19275 13.948 1.19335 11.9477C1.19634 5.68956 6.28895 0.598145 12.5477 0.598145C15.585 0.599341 18.435 1.7816 20.5789 3.92664C22.7221 6.07229 23.9026 8.92358 23.9014 11.9567C23.899 18.2148 18.8052 23.3068 12.5477 23.3068H12.5429C10.643 23.3062 8.77546 22.8296 7.11719 21.9248L1.09827 23.5036Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M1.09826 23.8022C1.01932 23.8022 0.942775 23.7711 0.885964 23.7137C0.811213 23.6378 0.781911 23.5272 0.810018 23.4249L2.38815 17.6625C1.40982 15.9247 0.893738 13.9513 0.894934 11.948C0.897326 5.5242 6.12449 0.298828 12.5477 0.298828C15.6633 0.300024 18.5905 1.51338 20.7906 3.71523C22.9906 5.91769 24.2016 8.84433 24.2004 11.9563C24.198 18.3795 18.9702 23.6055 12.5477 23.6055C10.6406 23.6049 8.75392 23.1343 7.07951 22.2438L1.1742 23.7921C1.14909 23.7992 1.12397 23.8022 1.09826 23.8022Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M12.5477 0.598006C15.5849 0.599202 18.435 1.78146 20.5789 3.9265C22.7221 6.07215 23.9026 8.92344 23.9014 11.9565C23.899 18.2147 18.8052 23.3067 12.5477 23.3067H12.5429C10.643 23.3061 8.77544 22.8295 7.11718 21.9247L1.09825 23.5034L2.70928 17.622C1.71539 15.901 1.19274 13.9479 1.19333 11.9476C1.19632 5.68942 6.28894 0.598006 12.5477 0.598006ZM12.5477 0C5.96004 0 0.598319 5.35933 0.595329 11.9476C0.594731 13.961 1.10304 15.9452 2.06702 17.7016L0.521176 23.3461C0.464964 23.5524 0.522372 23.7725 0.67307 23.9244C0.786691 24.0392 0.940378 24.102 1.09825 24.102C1.14908 24.102 1.19991 24.0954 1.25015 24.0823L7.04302 22.5633C8.73418 23.4412 10.6299 23.9047 12.5429 23.9053C19.1353 23.9053 24.497 18.5453 24.5 11.9571C24.5012 8.76437 23.2591 5.76238 21.0029 3.50431C18.7454 1.24565 15.7428 0.00119601 12.5477 0Z"
-                      fill="#CFD8DC"
-                    />
-                    <path
-                      d="M19.2226 5.28151C17.4405 3.49826 15.0718 2.51573 12.5507 2.51514C7.34561 2.51514 3.11233 6.74662 3.10994 11.9481C3.10934 13.7307 3.60808 15.4661 4.55293 16.9689L4.77778 17.3259L3.82396 20.8069L7.39585 19.8705L7.74089 20.075C9.18926 20.9349 10.8505 21.3894 12.5441 21.39H12.5477C17.7491 21.39 21.9824 17.1579 21.9842 11.9558C21.9848 9.43526 21.0047 7.06476 19.2226 5.28151Z"
-                      fill="#40C351"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M9.70953 7.20301C9.49724 6.73059 9.27359 6.72102 9.07086 6.71265C8.90522 6.70547 8.71625 6.70607 8.52728 6.70607C8.33831 6.70607 8.03093 6.77723 7.7708 7.06128C7.51067 7.34533 6.77751 8.03125 6.77751 9.42699C6.77751 10.8227 7.79412 12.1718 7.93585 12.3608C8.07758 12.5498 9.8985 15.5057 12.7821 16.6431C15.1783 17.588 15.6663 17.4002 16.1865 17.353C16.7068 17.3057 17.8651 16.667 18.1013 16.0045C18.3376 15.3419 18.3376 14.7744 18.267 14.656C18.1958 14.5375 18.0069 14.467 17.7234 14.3247C17.4399 14.1823 16.0448 13.4964 15.7847 13.4019C15.5245 13.3074 15.3356 13.2602 15.146 13.5443C14.957 13.8277 14.4134 14.467 14.2478 14.656C14.0821 14.8455 13.9165 14.8694 13.633 14.7271C13.3496 14.5848 12.4358 14.2858 11.3517 13.3194C10.5085 12.5677 9.93917 11.639 9.77352 11.355C9.60787 11.0715 9.75558 10.9178 9.8979 10.7761C10.0253 10.6487 10.1814 10.4448 10.3237 10.2791C10.4654 10.1135 10.5127 9.9951 10.6071 9.80613C10.7016 9.61656 10.6544 9.45091 10.5832 9.30918C10.5133 9.16686 9.96189 7.76394 9.70953 7.20301Z"
-                      fill="white"
-                    />
-                  </svg>
-                  Contact us
-                </a>
-                <a href="#" class="btn btn-fill"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#fff"
-                    class="pe-2"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
-                    />
-                  </svg>
-                  Contact us
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-4 d-none d-lg-block">
-              <div class="about-us-img">
-                <img
-                  src="images/contact.png"
-                  alt="About Us"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer section-py-50 pb-0">
-      <div class="container position-relative z-3">
-        <div class="row mb-2 row-gap-4">
-          <div class="col-xl-3 col-lg-3 col-md-4 col-12">
-            <div>
-              <div>
-                <img
-                  src="images/logo-light.png"
-                  class="img-fluid"
-                  alt="footer logo"
-                />
-              </div>
-              <p class="para-noraml mb-0 text-white mt-2 line-clamp-3">
-                Allergy testing can be useful at different stages of life, like
-                discovering that a family member has a condition. like
-                discovering that a family member has a condition.
+    <section class="section-py-50 about-sec pb-lg-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <div class="text-center">
+              <p class="mb-0 sub-heading">
+                Patholab Laboratory is a Full-Service Clinical Lab
               </p>
-              <div class="mt-3 ">
-                <h6 class="h6-heading text-white mb-0">Follow us</h6>
-                <ul class="social-icon ps-0 mb-0 mt-3 d-flex align-item-center gap-3">
-                  <li>
-                    <a href="#"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#fff"
-                        viewBox="0 0 448 512"
-                      >
-                        <path
-                          d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#fff"
-                        viewBox="0 0 320 512"
-                      >
-                        <path
-                          d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#fff"
-                        viewBox="0 0 448 512"
-                      >
-                        <path
-                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#fff"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#fff"
-                        viewBox="0 0 576 512"
-                      >
-                        <path
-                          d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <h2 class="h2-heading mb-0 secondary-textcolor">
+                Patholab Provides the best laboratory experience
+              </h2>
+            </div>
+            <div class="d-flex align-items-center justify-content-center gap-4 mt-4">
+              <a href="#" class="btn btn-fill"><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.09827 23.5036L2.70929 17.6222C1.71541 15.9011 1.19275 13.948 1.19335 11.9477C1.19634 5.68956 6.28895 0.598145 12.5477 0.598145C15.585 0.599341 18.435 1.7816 20.5789 3.92664C22.7221 6.07229 23.9026 8.92358 23.9014 11.9567C23.899 18.2148 18.8052 23.3068 12.5477 23.3068H12.5429C10.643 23.3062 8.77546 22.8296 7.11719 21.9248L1.09827 23.5036Z"
+                    fill="white" />
+                  <path
+                    d="M1.09826 23.8022C1.01932 23.8022 0.942775 23.7711 0.885964 23.7137C0.811213 23.6378 0.781911 23.5272 0.810018 23.4249L2.38815 17.6625C1.40982 15.9247 0.893738 13.9513 0.894934 11.948C0.897326 5.5242 6.12449 0.298828 12.5477 0.298828C15.6633 0.300024 18.5905 1.51338 20.7906 3.71523C22.9906 5.91769 24.2016 8.84433 24.2004 11.9563C24.198 18.3795 18.9702 23.6055 12.5477 23.6055C10.6406 23.6049 8.75392 23.1343 7.07951 22.2438L1.1742 23.7921C1.14909 23.7992 1.12397 23.8022 1.09826 23.8022Z"
+                    fill="white" />
+                  <path
+                    d="M12.5477 0.598006C15.5849 0.599202 18.435 1.78146 20.5789 3.9265C22.7221 6.07215 23.9026 8.92344 23.9014 11.9565C23.899 18.2147 18.8052 23.3067 12.5477 23.3067H12.5429C10.643 23.3061 8.77544 22.8295 7.11718 21.9247L1.09825 23.5034L2.70928 17.622C1.71539 15.901 1.19274 13.9479 1.19333 11.9476C1.19632 5.68942 6.28894 0.598006 12.5477 0.598006ZM12.5477 0C5.96004 0 0.598319 5.35933 0.595329 11.9476C0.594731 13.961 1.10304 15.9452 2.06702 17.7016L0.521176 23.3461C0.464964 23.5524 0.522372 23.7725 0.67307 23.9244C0.786691 24.0392 0.940378 24.102 1.09825 24.102C1.14908 24.102 1.19991 24.0954 1.25015 24.0823L7.04302 22.5633C8.73418 23.4412 10.6299 23.9047 12.5429 23.9053C19.1353 23.9053 24.497 18.5453 24.5 11.9571C24.5012 8.76437 23.2591 5.76238 21.0029 3.50431C18.7454 1.24565 15.7428 0.00119601 12.5477 0Z"
+                    fill="#CFD8DC" />
+                  <path
+                    d="M19.2226 5.28151C17.4405 3.49826 15.0718 2.51573 12.5507 2.51514C7.34561 2.51514 3.11233 6.74662 3.10994 11.9481C3.10934 13.7307 3.60808 15.4661 4.55293 16.9689L4.77778 17.3259L3.82396 20.8069L7.39585 19.8705L7.74089 20.075C9.18926 20.9349 10.8505 21.3894 12.5441 21.39H12.5477C17.7491 21.39 21.9824 17.1579 21.9842 11.9558C21.9848 9.43526 21.0047 7.06476 19.2226 5.28151Z"
+                    fill="#40C351" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.70953 7.20301C9.49724 6.73059 9.27359 6.72102 9.07086 6.71265C8.90522 6.70547 8.71625 6.70607 8.52728 6.70607C8.33831 6.70607 8.03093 6.77723 7.7708 7.06128C7.51067 7.34533 6.77751 8.03125 6.77751 9.42699C6.77751 10.8227 7.79412 12.1718 7.93585 12.3608C8.07758 12.5498 9.8985 15.5057 12.7821 16.6431C15.1783 17.588 15.6663 17.4002 16.1865 17.353C16.7068 17.3057 17.8651 16.667 18.1013 16.0045C18.3376 15.3419 18.3376 14.7744 18.267 14.656C18.1958 14.5375 18.0069 14.467 17.7234 14.3247C17.4399 14.1823 16.0448 13.4964 15.7847 13.4019C15.5245 13.3074 15.3356 13.2602 15.146 13.5443C14.957 13.8277 14.4134 14.467 14.2478 14.656C14.0821 14.8455 13.9165 14.8694 13.633 14.7271C13.3496 14.5848 12.4358 14.2858 11.3517 13.3194C10.5085 12.5677 9.93917 11.639 9.77352 11.355C9.60787 11.0715 9.75558 10.9178 9.8979 10.7761C10.0253 10.6487 10.1814 10.4448 10.3237 10.2791C10.4654 10.1135 10.5127 9.9951 10.6071 9.80613C10.7016 9.61656 10.6544 9.45091 10.5832 9.30918C10.5133 9.16686 9.96189 7.76394 9.70953 7.20301Z"
+                    fill="white" />
+                </svg>
+                Contact us
+              </a>
+              <a href="#" class="btn btn-fill"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" class="pe-2"
+                  width="24" height="24" viewBox="0 0 512 512">
+                  <path
+                    d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                </svg>
+                Contact us
+              </a>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-2 col-md-4 col-12">
-            <div>
-              <h6 class="h6-heading text-white mb-2">Packages</h6>
-              <ul class="footer-link-list ps-0 mb-0">
-                <li><a href="#">Super 1</a></li>
-                <li><a href="#">Super 2</a></li>
-                <li><a href="#">Super 3</a></li>
-                <li><a href="#">Super 4</a></li>
-                <li><a href="#">LFT</a></li>
-                <li><a href="#">RFT</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-md-4 col-12">
-            <div>
-              <h6 class="h6-heading text-white mb-2">Test</h6>
-              <ul class="footer-link-list ps-0 mb-0">
-                <li><a href="#">Lft</a></li>
-                <li><a href="#">Rft</a></li>
-                <li><a href="#">Cbc</a></li>
-                <li><a href="#">Glucose</a></li>
-                <li><a href="#">Esr</a></li>
-                <li><a href="#">Hba1c</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-md-4 col-12">
-            <div>
-              <h6 class="h6-heading text-white mb-2">Location</h6>
-              <ul class="footer-link-list ps-0 mb-0">
-                <li><a href="#">Jaipur</a></li>
-                <li><a href="#">Rewari</a></li>
-                <li><a href="#">Narnaul</a></li>
-                <li><a href="#">Neem ka thana</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-4 col-12">
-            <div>
-              <h6 class="h6-heading text-white mb-2">Contact Us</h6>
-              <ul class=" ps-0 mb-0">
-                <li>
-                  <a href="#" class="text-white"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      width="24"
-                      height="24"
-                      class="text-white pe-1"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-                      />
-                    </svg>
-                    +91 9012345678</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-white d-block my-2"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      width="24"
-                      height="24"
-                      class="text-white pe-1"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                      />
-                    </svg>
-                    Patholab@Gmail.com</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      width="24"
-                      height="24"
-                      class="text-white pe-1"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                      />
-                    </svg>
-                    1&2, BDO Block, Garhi Bolni Rd, near Tehsil, New Colony,
-                    Rewari, Haryana 123401</a
-                  >
-                </li>
-              </ul>
-              <div class="mt-3">
-                <a href="#" class="btn btn-fill">Find Nearby Center</a>
-              </div>
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="about-us-img">
+              <img src="images/contact.png" alt="About Us" class="img-fluid" />
             </div>
           </div>
         </div>
-       
       </div>
-      <div class="border-1 border-top border-solid position-relative z-3 mt-5">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between py-3 flex-wrap flex-sm-nowrap ">
-            <p class="mb-0 fs-6 fe-medium text-white order-2 order-sm-1">
-              © Copyright 2025 All rights reserved.
-              <a href="#" class="text-white">Accurancy path lab</a>
+    </section>
+  </main>
+
+  <footer class="footer section-py-50 pb-0">
+    <div class="container position-relative z-3">
+      <div class="row mb-2 row-gap-4">
+        <div class="col-xl-3 col-lg-3 col-md-4 col-12">
+          <div>
+            <div>
+              <img src="images/logo-light.png" class="img-fluid" alt="footer logo" />
+            </div>
+            <p class="para-noraml mb-0 text-white mt-2 line-clamp-3">
+              Allergy testing can be useful at different stages of life, like
+              discovering that a family member has a condition. like
+              discovering that a family member has a condition.
             </p>
-            <ul class="ps-0 mb-0 d-flex align-items-center gap-3 footer-bottom order-1 order-sm-2">
-              <li>
-                <a href="#" class="fs-6 fw-semibold text-white"
-                  >Terms & Conditions</a
-                >
-              </li>
-              <li>
-                <a href="#" class="fs-6 fw-semibold text-white"
-                  >Privacy & Policy</a
-                >
-              </li>
+            <div class="mt-3 ">
+              <h6 class="h6-heading text-white mb-0">Follow us</h6>
+              <ul class="social-icon ps-0 mb-0 mt-3 d-flex align-item-center gap-3">
+                <li>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff"
+                      viewBox="0 0 448 512">
+                      <path
+                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff"
+                      viewBox="0 0 320 512">
+                      <path
+                        d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff"
+                      viewBox="0 0 448 512">
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff"
+                      viewBox="0 0 512 512">
+                      <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff"
+                      viewBox="0 0 576 512">
+                      <path
+                        d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-4 col-12">
+          <div>
+            <h6 class="h6-heading text-white mb-2">Packages</h6>
+            <ul class="footer-link-list ps-0 mb-0">
+              <li><a href="#">Super 1</a></li>
+              <li><a href="#">Super 2</a></li>
+              <li><a href="#">Super 3</a></li>
+              <li><a href="#">Super 4</a></li>
+              <li><a href="#">LFT</a></li>
+              <li><a href="#">RFT</a></li>
             </ul>
           </div>
         </div>
-      </div>
-    </footer>
-
-
-    <div class="modal fade booktest" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="bookingModalLabel">Blood Test Booking Form</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="col-xl-2 col-lg-2 col-md-4 col-12">
+          <div>
+            <h6 class="h6-heading text-white mb-2">Test</h6>
+            <ul class="footer-link-list ps-0 mb-0">
+              <li><a href="#">Lft</a></li>
+              <li><a href="#">Rft</a></li>
+              <li><a href="#">Cbc</a></li>
+              <li><a href="#">Glucose</a></li>
+              <li><a href="#">Esr</a></li>
+              <li><a href="#">Hba1c</a></li>
+            </ul>
           </div>
-          <div class="modal-body">
-            <form>
-              
-  
-              <div class="d-flex align-item-center justify-content-between gap-3 flex-wrap flex-md-nowrap">
-             <!-- Name -->
-             <div class="mb-3 w-100">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-4 col-12">
+          <div>
+            <h6 class="h6-heading text-white mb-2">Location</h6>
+            <ul class="footer-link-list ps-0 mb-0">
+              <li><a href="#">Jaipur</a></li>
+              <li><a href="#">Rewari</a></li>
+              <li><a href="#">Narnaul</a></li>
+              <li><a href="#">Neem ka thana</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-12">
+          <div>
+            <h6 class="h6-heading text-white mb-2">Contact Us</h6>
+            <ul class=" ps-0 mb-0">
+              <li>
+                <a href="#" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" width="24" height="24" class="text-white pe-1">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg>
+                  +91 9012345678</a>
+              </li>
+              <li>
+                <a href="#" class="text-white d-block my-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24"
+                    class="text-white pe-1">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>
+                  Patholab@Gmail.com</a>
+              </li>
+              <li>
+                <a href="#" class="text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" width="24" height="24" class="text-white pe-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>
+                  1&2, BDO Block, Garhi Bolni Rd, near Tehsil, New Colony,
+                  Rewari, Haryana 123401</a>
+              </li>
+            </ul>
+            <div class="mt-3">
+              <a href="#" class="btn btn-fill">Find Nearby Center</a>
             </div>
-             <!--last Name -->
-             <div class="mb-3 w-100">
-              <label for="name" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="Enter Last name" required>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="border-1 border-top border-solid position-relative z-3 mt-5">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between py-3 flex-wrap flex-sm-nowrap ">
+          <p class="mb-0 fs-6 fe-medium text-white order-2 order-sm-1">
+            © Copyright 2025 All rights reserved.
+            <a href="#" class="text-white">Accurancy path lab</a>
+          </p>
+          <ul class="ps-0 mb-0 d-flex align-items-center gap-3 footer-bottom order-1 order-sm-2">
+            <li>
+              <a href="#" class="fs-6 fw-semibold text-white">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="fs-6 fw-semibold text-white">Privacy & Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal fade booktest" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingModalLabel">Appointment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+
+            <div class="d-flex align-item-center justify-content-between gap-3 flex-wrap flex-md-nowrap">
+              <!-- Name -->
+              <div class="mb-3 w-100">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <!--last Name -->
+              <div class="mb-3 w-100">
+                <label for="name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter Last name" required>
+              </div>
             </div>
-            </div>
-              <div class="d-flex align-item-center justify-content-between gap-3 flex-wrap flex-md-nowrap">
+            <div class="d-flex align-item-center justify-content-between gap-3 flex-wrap flex-md-nowrap">
               <!-- Age -->
               <div class="mb-3 w-100">
                 <label for="age" class="form-label">Age</label>
                 <input type="text" class="form-control" id="age" placeholder="Enter your age" required>
               </div>
-  
+
               <!-- Mobile Number -->
               <div class="mb-3 w-100">
                 <label for="mobile" class="form-label">Mobile Number</label>
                 <input type="text" class="form-control" id="mobile" placeholder="Enter your mobile number" required>
               </div>
             </div>
-              <div class="d-flex align-item-center justify-content-between gap-3 flex-wrap flex-md-nowrap">
+            <div class="d-flex align-item-center justify-content-between gap-3 flex-wrap flex-md-nowrap">
               <!-- Test List -->
               <div class="mb-3 w-100">
                 <label for="test" class="form-label">Select Test</label>
@@ -1816,31 +1368,32 @@
                 <input type="datetime-local" class="form-control" id="time" required>
               </div>
             </div>
-  
-              
-  
-              <!-- Address -->
-              <div class="mb-3">
-                <label for="address" class="form-label">Address</label>
-                <textarea class="form-control" id="address" rows="4" placeholder="Enter your address" required></textarea>
-              </div>
-  
-              
-  
-              <!-- Submit Button -->
-              <div class="text-start">
-                <button type="submit" class="btn btn-fill">Proceed Book Test</button>
-              </div>
-            </form>
-          </div>
+
+
+
+            <!-- Address -->
+            <div class="mb-3">
+              <label for="address" class="form-label">Address</label>
+              <textarea class="form-control" id="address" rows="4" placeholder="Enter your address" required></textarea>
+            </div>
+
+
+
+            <!-- Submit Button -->
+            <div class="text-start">
+              <button type="submit" class="btn btn-fill">Proceed Book Test</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.bundle.min5.3.3.js"></script>
-    <!-- swiper carousel js -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- custom js -->
-    <script src="js/script.js"></script>
-  </body>
+  </div>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min5.3.3.js"></script>
+  <!-- swiper carousel js -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- custom js -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>
