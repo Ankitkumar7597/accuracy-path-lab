@@ -86,12 +86,6 @@ var swiper = new Swiper(".hero-carousel", {
   },
 });
 
-// Pause auto-slide on hover or focus
-const heroCarousel = document.querySelector(".hero-carousel");
-heroCarousel.addEventListener("mouseenter", () => swiper.autoplay.stop());
-heroCarousel.addEventListener("mouseleave", () => swiper.autoplay.start());
-heroCarousel.addEventListener("focusin", () => swiper.autoplay.stop());
-heroCarousel.addEventListener("focusout", () => swiper.autoplay.start());
 
 
 var swiper = new Swiper(".testmonial-carousel", {
@@ -137,7 +131,6 @@ var swiper = new Swiper(".testmonial-carousel", {
 document.addEventListener('DOMContentLoaded', () => {
   // Select all elements with the class 'marquee-ul'
   const marqueeElements = document.querySelectorAll('.marquee-ul');
-
   // Add event listeners for 'mouseenter' and 'mouseleave'
   marqueeElements.forEach(element => {
     element.addEventListener('mouseenter', () => {
